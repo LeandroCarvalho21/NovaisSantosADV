@@ -12,7 +12,7 @@ header {
     height: 1080px;
     background-image:
         url("../img/img1Header.webp"),
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
@@ -57,14 +57,22 @@ h2 {
     flex-direction: row;
     justify-content: center;
     width: 150px;
+    height: auto;
     gap: 10px;
-    background-color: #f5f5f5c3;
+    /* background-color: #f5f5f5c3; */
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
 }
 
 .redes-sociais img {
     width: 36px;
+}
+
+.redes-sociais img:hover {
+    width: 38px;
+    background-color: #e8d278d8;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px #fff ;
 }
 
  
