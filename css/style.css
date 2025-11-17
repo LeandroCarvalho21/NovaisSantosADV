@@ -9,7 +9,7 @@ header {
     flex-direction: column;
     /* align-items: center;  */
     /* justify-content: center; */
-    height: 1080px;
+    height: 800px;
     background-image:
         url("../img/img1Header.webp"),
         linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
