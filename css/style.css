@@ -106,10 +106,11 @@ nav ul li a:hover {
 .previa {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 40px;
     padding: 60px 5%;
     line-height: 1.5;
+
 }
 
 .previa img {
@@ -147,17 +148,15 @@ nav ul li a:hover {
     align-items: center;
     gap: 40px;
     padding: 60px 20px;
-    width: 100vw;
     background-color: #A4905B;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     height: 700px;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    /* background: linear-gradient(180deg, #fff 0%, #f1e6c8 40%, #A4905B 10%); */
 }
-     
-
-
 
 .card-servico {
     display: flex;
@@ -189,4 +188,30 @@ nav ul li a:hover {
     color: #4a4a4a;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:40px ;
+    padding: 60px 0px;
+
+}
+
+.sobre p {
+    /* background-color: red; */
+    width: 400px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-style: oblique;
+    padding: 30px;
+    text-align: justify;
+}
+
+.sobre img {
+    border-radius: 100%;
+    width: 500px;
 }
