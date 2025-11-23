@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+}
+
 .container {
     /* background-color: rgb(164, 164, 164); */
     padding: 0px 64px;
-    height: 100vh;
-    /* width: 100vw; */
+    /* height: 100vh; */
+    /* width: 100%; */
 }
 
 #header {
@@ -92,25 +96,24 @@ nav ul li a:hover {
     color: #A4905B;
 }
 
+
 .space-header {
     background-color: rgb(255, 255, 255);
     height: 90px;
-    width: 100vw;
+    width: 100%;
     position: relative;
     top: 0;
     left: 0;
 
 }
 
-
 .previa {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 40px;
-    padding: 60px 5%;
+    padding: 60px 64px;
     line-height: 1.5;
-
 }
 
 .previa img {
@@ -119,7 +122,6 @@ nav ul li a:hover {
     border-radius: 8px;
     box-shadow: 0px 2px 10px rgb(82, 82, 82);
     margin: 5px 0px;
-    /* width: 50%; */
 }
 
 .previa h2 {
@@ -129,7 +131,6 @@ nav ul li a:hover {
     font-weight: bold;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-
 }
 
 .previa h3 {
@@ -147,15 +148,9 @@ nav ul li a:hover {
     flex-wrap: wrap;
     align-items: center;
     gap: 40px;
-    padding: 60px 20px;
+    padding: 60px 64px;
     background-color: #A4905B;
-    position: relative;
-    width: 100vw;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    height: 700px;
+    width: 100%;
 }
 
 .card-servico {
@@ -195,13 +190,11 @@ nav ul li a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap:40px ;
+    gap: 40px;
     padding: 60px 0px;
-
 }
 
 .sobre p {
-    /* background-color: red; */
     width: 400px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -209,9 +202,40 @@ nav ul li a:hover {
     font-style: oblique;
     padding: 30px;
     text-align: justify;
+    /* opacity: 0; */
+    /* transform: translateX(-80px); */
+    /* transition: 0.6s ease; */
 }
 
 .sobre img {
     border-radius: 100%;
     width: 500px;
+    /* opacity: 0; */
+    /* transform: translateX(-80px); */
+    /* transition: 0.6s ease; */
+}
+
+.btn-consulta {
+    background-color: #d4af37;
+    color: #000;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.btn-consulta:hover {
+    background-color: #b9972f;
+    transform: scale(1.05);
+}
+
+.whatsapp-icon {
+    position: fixed;
+    right: 20px;
+    z-index: 9999;
+    bottom: 30px;
 }

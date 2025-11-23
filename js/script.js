@@ -1,4 +1,8 @@
+let sobre = document.getElementById("sobre");
+
 let ultimoScroll = 0;
+
+
 const header = document.getElementById("header");
 
 window.addEventListener("scroll", function () {
@@ -14,3 +18,10 @@ window.addEventListener("scroll", function () {
 
     ultimoScroll = scrollAtual;
 });
+
+
+sobre.addEventListener("mouseover", function (event) {
+    event.preventDefault();
+    sobre.style.color = "red"
+    
+})
