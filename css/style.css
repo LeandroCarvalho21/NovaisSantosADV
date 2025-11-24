@@ -4,11 +4,104 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+    width: 100%;
+    padding: 5px 8px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    /* width: 100%; */
+    /* background-color: #A4905B; */
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 5px 0px;
+    border-radius: 8px;
+    padding: 2px;
+
+
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+
+}
+
+
+
+header nav ul {
+    width: 100%;
+    display: none;
+}
+
+#close_hamburguer {
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+#open_hamburguer {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+
+.ns-advocacia {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo {
+    font-size: 3rem;
+    color: #A4905B;
+    text-shadow: 0px 2px 4px #e8d178;
+    font-family: "Parisienne", cursive;
+    font-weight: 300;
+    font-style: normal;
+    padding: 0px 12px;
+}
+
+
+.ns-advocacia h1 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.ns-advocacia h2 {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+
+
+
+
 @media (min-width:900px) {
 
-    body {
-        width: 100%;
-    }
+
 
     .container {
         /* background-color: rgb(164, 164, 164); */
