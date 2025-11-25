@@ -10,7 +10,6 @@ body {
 
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     background-color: #1E231F;
     width: 100%;
@@ -21,7 +20,13 @@ header nav {
     display: flex;
     flex-direction: column;
     align-items: end;
+    /* width: 100%; */
     gap: 5px;
+}
+
+header nav ul {
+    width: 100%;
+    display: none;
 }
 
 header nav ul li {
@@ -29,6 +34,7 @@ header nav ul li {
     margin: 5px 0px;
     border-radius: 8px;
     padding: 2px;
+    background-color: #a4915b7e;
 }
 
 header nav ul li a {
@@ -36,11 +42,6 @@ header nav ul li a {
     text-decoration: none;
     color: #fff;
     text-align: center;
-}
-
-header nav ul {
-    width: 100%;
-    display: none;
 }
 
 #close_hamburguer {
@@ -52,7 +53,8 @@ header nav ul {
 #open_hamburguer {
     width: 24px;
     height: 24px;
-    display: block;
+    /* display: block; */
+    /* top: 0; */
 }
 
 .ns-advocacia {
@@ -60,6 +62,8 @@ header nav ul {
     align-items: center;
     gap: 10px;
 }
+
+
 
 #logo {
     font-size: 3rem;
@@ -94,6 +98,7 @@ header nav ul {
     /* height: 24px; */
     background-color: red;
 }
+
 .whatsapp-icon img {
     position: relative;
     z-index: 9999;
@@ -176,21 +181,21 @@ header nav ul {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
-.servicos div h2{
+.servicos div h2 {
     border: solid 1px #35353552;
     box-shadow: 0px 2px 4px rgb(74, 74, 74);
     padding: 5px 12px;
     border-radius: 8px;
     font-size: 1.1rem;
     margin-bottom: 10px;
-    
-    
+
+
 }
 
-.servicos div h4{
+.servicos div h4 {
     text-align: center;
     font-size: 24px;
 }
