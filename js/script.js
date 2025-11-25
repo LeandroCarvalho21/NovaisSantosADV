@@ -7,6 +7,7 @@ let nav = document.querySelector("#nav")
 let ultimoScroll = 0;
 let open_close = 1
 const header = document.getElementById("header");
+let container = document.querySelector(".container")
 
 open_hamburguer.addEventListener("click", function (event) {
     event.preventDefault();
@@ -58,5 +59,6 @@ window.addEventListener("scroll", function () {
 sobre.addEventListener("mouseover", function (event) {
     event.preventDefault();
     sobre.style.color = "red"
+    // container.style.background = "blue";
 
 })

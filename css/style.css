@@ -8,12 +8,11 @@ body {
     width: 100%;
 }
 
-
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #000;
+    background-color: #1E231F;
     width: 100%;
     padding: 5px 16px;
 }
@@ -23,8 +22,6 @@ header nav {
     flex-direction: column;
     align-items: end;
     gap: 5px;
-    /* width: 100%; */
-    /* background-color: #A4905B; */
 }
 
 header nav ul li {
@@ -32,8 +29,6 @@ header nav ul li {
     margin: 5px 0px;
     border-radius: 8px;
     padding: 2px;
-
-
 }
 
 header nav ul li a {
@@ -41,10 +36,7 @@ header nav ul li a {
     text-decoration: none;
     color: #fff;
     text-align: center;
-
 }
-
-
 
 header nav ul {
     width: 100%;
@@ -63,7 +55,6 @@ header nav ul {
     display: block;
 }
 
-
 .ns-advocacia {
     display: flex;
     align-items: center;
@@ -80,7 +71,6 @@ header nav ul {
     padding: 0px 12px;
 }
 
-
 .ns-advocacia h1 {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
@@ -95,9 +85,148 @@ header nav ul {
     font-size: 14px;
 }
 
+.whatsapp-icon {
+    position: fixed;
+    right: 20px;
+    z-index: 9999;
+    bottom: 30px;
+    /* width: 24px; */
+    /* height: 24px; */
+    background-color: red;
+}
+.whatsapp-icon img {
+    position: relative;
+    z-index: 9999;
+}
 
+.btn-consulta {
+    background-color: #d4af37;
+    color: #000;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
 
+.previa {
+    height: 500px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+        url("../img/adv.jpg")no-repeat center center;
+    background-size: cover;
+}
 
+.previa article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 16px;
+}
+
+.previa img {
+    height: auto;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgb(82, 82, 82);
+    margin: 5px 0px;
+}
+
+.previa h2 {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-align: center;
+    color: #ffffff;
+}
+
+.previa h3 {
+    font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 16px;
+    background-color: #A4905B;
+    width: 100%;
+}
+
+.servicos div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.servicos div h2{
+    border: solid 1px #35353552;
+    box-shadow: 0px 2px 4px rgb(74, 74, 74);
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    
+    
+}
+
+.servicos div h4{
+    text-align: center;
+    font-size: 24px;
+}
+
+.card-servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #e6e6e6;
+    padding: 15px 10px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 12px;
+    /* width: 380px; */
+    /* height: 400px; */
+    box-shadow: 0px 2px 8px rgb(138, 138, 138);
+
+}
+
+.card-servico img {
+    border-radius: 8px;
+}
+
+.card-servico h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-servico p {
+    line-height: 1.5;
+    text-align: justify;
+    color: #4a4a4a;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 @media (min-width:900px) {
 
